@@ -27,13 +27,14 @@ public class MainActivity extends ActionBarActivity {
         imagen.setImageResource(R.mipmap.ic_launcher);
 
         //declare animation object
-        final Animation animation = AnimationUtils.loadAnimation(this, R.anim.alarga_hor_y_rota_45_grados_2disminuye_hasta_desaparecer);
-
+        //final Animation animation = AnimationUtils.loadAnimation(this, R.anim.alarga_hor_y_rota_45_grados_2disminuye_hasta_desaparecer);
+        //final Animation animation = AnimationUtils.loadAnimation(this, R.anim.desplaza_der_2_deplaza_iz_3_vuelve_origen);
+        final Animation animation = AnimationUtils.loadAnimation(this, R.anim.aumenta_tamanyo_2vuelve_normal_3veces);
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                v.startAnimation(animation);
+                imagen.startAnimation(animation);
             }
         });
 
