@@ -30,7 +30,7 @@
                 android:pivotY="50%"
                 android:startOffset="100"
                 android:duration="400"
-                android:repeatCount="2"/>
+                />
         </set>
     </set>
 </set>
